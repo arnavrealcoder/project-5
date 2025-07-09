@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Home">3d animation lesson 5 project</title>
+    <link rel="icon" type="image/jpeg" href="model.png">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+        body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #1a1a1a, #4b1d1d);
+      color: #f0e6d2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #330000;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ddd;
+    }
+
+    nav {
+      background-color: #660000;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+    }
+    
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #2d2d2d;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #000;
+    }
+
+    section h2 {
+      color: #ff9933;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  
+   </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="About">🐉 Legends of the Dragon 🐉</h1>
+        <p id="Types">Explore the mythical world of dragons from East to West</p>
+      </header>
+    
+      <nav>
+        <a href="#Home">Home</a>
+        <a href="#Types">Types</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Myths">Myths</a>
+        <a href="#About">About</a>
+      </nav>
+    
+      <section>
+        <h2>🔥 The Power of Dragons</h2>
+        <p>Dragons are powerful, mystical creatures that appear in the folklore of countless cultures. From fiery beasts of the West to wise, serpentine protectors of the East, dragons inspire awe, fear, and wonder.</p>
+      </section>
+    
+      <section>
+        <h2 id="Myths">🌍 Types of Dragons</h2>
+        <ul>
+          <li><strong>Western Dragons:</strong> Fire-breathing, winged, and fierce.</li>
+          <li><strong>Eastern Dragons:</strong> Long, wise, and associated with water and weather.</li>
+          <li><strong>Wyverns:</strong> Two-legged dragons with wings, often found in medieval heraldry.</li>
+          <li><strong>Hydras:</strong> Many-headed monsters from Greek myth—cut one off, two more grow!</li>
+        </ul>
+      </section>
+    
+      <section>
+        <h2>🖼️ Dragon Gallery</h2>
+        <img src="https://via.placeholder.com/800x400/990000/ffffff?text=Western+Dragon" alt="Western Dragon">
+        <img src="https://via.placeholder.com/800x400/003366/ffffff?text=Eastern+Dragon" alt="Eastern Dragon">
+      </section>
+    
+      <section>
+        <h2 >📜 Dragon Myths</h2>
+        <p>In European mythology, dragons were often seen as evil creatures to be slain by knights, like in the tale of Saint George. In contrast, Chinese dragons are wise, benevolent, and symbols of imperial power and natural harmony.</p>
+      </section>
+    
+      <hr>
+    
+    <div class="banner" id="Gallery">
+        <div class="slider" style="--quantity: 10" class="Gallery">
+            <div class="item" style="--position: 1"><img src="dragon_1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="dragon_2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="dragon_3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="dragon_4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="dragon_5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="dragon_6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="dragon_7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="dragon_8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="dragon_9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="dragon_10.jpg" alt=""></div>
+            
+          </div>
+        <div class="content">
+           
+            <div class="author">
+                <h2>-Arnav</h2>
+                <p><b>Web project</b></p>
+                <p>
+                   Let me know if you want more just like this!
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    <hr>
+    <div style="background-color: #111;">
+    <section style="background-color: #4b1d1d;">
+    </div>
+    
